@@ -1,8 +1,7 @@
 {
-  "name": "webpack-template",
+  "name": "homepage",
   "version": "1.0.0",
-  "type": "module",
-  "description": "Webpack template for web dev",
+  "description": "Responsive design hompage for The Odin Project",
   "main": "main.js",
   "scripts": {
     "test": "jest --verbose",
@@ -12,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sjmy/webpack-template.git"
+    "url": "git+https://github.com/sjmy/homepage.git"
   },
   "author": "sjmy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sjmy/webpack-template/issues"
+    "url": "https://github.com/sjmy/homepage/issues"
   },
-  "homepage": "https://github.com/sjmy/webpack-template#readme",
+  "homepage": "https://github.com/sjmy/homepage#readme",
   "devDependencies": {
     "@babel/core": "^7.28.0",
     "@babel/preset-env": "^7.28.0",
