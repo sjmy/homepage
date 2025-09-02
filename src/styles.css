@@ -10,34 +10,86 @@
 }
 
 @media (max-width: 600px) {
-  .header-content,
-  .footer-content {
+  .header-content {
     flex-direction: column;
+    margin: 20px;
   }
 
-  .header-image,
+  .header-image {
+    max-width: 80vw;
+    justify-self: center;
+  }
+
+  .main-content {
+    margin: 20px;
+  }
+
+  .about-me,
+  .my-work,
+  .contact-me,
+  .link-logos {
+    justify-self: center;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .contact-content {
+    margin: 20px;
+  }
+
   .footer-image {
-    border: 5px solid green;
-    margin: 10px;
-    max-width: 90vw;
+    width: 100vw;
+    justify-self: center;
   }
 }
 
 @media (min-width: 601px) and (max-width: 1200px) {
-  .header-image,
+  .header-content,
+  .main-content,
+  .footer-content {
+    margin: 50px;
+  }
+
+  .header-image {
+    width: 50vw;
+  }
+
   .footer-image {
-    border: 5px solid orange;
-    margin: 20px;
-    max-width: 50vw;
+    max-width: 60vw;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
   }
 }
 
 @media (min-width: 1200px) {
-  .header-image,
-  .footer-image {
-    border: 5px solid blue;
-    margin: 40px;
+  .header-content,
+  .main-content,
+  .footer-content {
+    margin: 80px;
+  }
+
+  .header-image {
     width: 40vw;
+  }
+
+  .footer-image {
+    width: 60vw;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
   }
 }
 
@@ -58,8 +110,23 @@ body {
 
 .footer-content {
   display: flex;
+  justify-content: space-between;
 }
 
 .footer-image {
   display: flex;
+}
+
+.card-container {
+  display: grid;
+  background-color: #fff;
+  color: #444;
+}
+
+.card {
+  max-width: 200px;
+  border: 1px solid lightgrey;
+  box-shadow: 1px 1px 4px 1px lightgrey;
+  padding: 20px;
+  justify-self: center;
 }
